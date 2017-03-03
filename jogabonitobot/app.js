@@ -2,7 +2,6 @@ const _ = require('underscore');
 const futbolhero = require('./JogaBonitoBot');
 const TeleBot = require('telebot');
 const bot = new TeleBot('333576962:AAEg6XnIhsO_3ZTc6KFipZLnzhpp2FmFcjQ');
-require('./server');
 
 bot.on('/plantel', msg => {
 	let fromId = msg.from.id;
