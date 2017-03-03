@@ -117,5 +117,6 @@ module.exports = {
 	formatearLista: formatearLista,
 	delUser: delUser,
 	addUser: addUser,
-	jugadoresRestantes: jugadoresRestantes
+	jugadoresRestantes: jugadoresRestantes,
+	reiniciarSemana: reiniciarSemana
 };
