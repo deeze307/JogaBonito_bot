@@ -41,6 +41,19 @@ function jugadoresRestantes(fromId){
 	return (jugadores - _.size(players));
 }
 
+function reiniciarSemana()
+{
+	let msg ="";
+	if (listado.length > 0){ 
+		listado = [];
+		msg = "La lista de jugadores ahora se encuentra VACIA.";
+	}
+	else{
+		msg ="No hay jugadores en la lista actual.";
+	}
+	return msg;
+}
+
 function delUser(user,fromId, eliminador) {
   user = capitalizar(user);
   if(eliminador) {
