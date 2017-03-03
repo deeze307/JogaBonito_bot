@@ -41,8 +41,7 @@ function jugadoresRestantes(fromId){
 	return (jugadores - _.size(players));
 }
 
-function reiniciarSemana()
-{
+function reiniciarSemana(){
 	let msg ="";
 	if (listado.length > 0){ 
 		listado = [];

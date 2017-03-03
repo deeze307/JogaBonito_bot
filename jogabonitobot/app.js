@@ -53,8 +53,9 @@ bot.on('/nova', msg => {
 });
 
 bot.on('/reset',msg => {
+	let fromId = msg.from.id;
 	let rta = jogaBonito.reiniciarSemana();
-	return bot.sendMessage(rta);
+	return bot.sendMessage(fromId,rta);
 });
 
 console.log("Wait...");
